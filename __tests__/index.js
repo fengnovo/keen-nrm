@@ -70,6 +70,7 @@ test('keen-nrm use key', () => {
     setTimeout(() => { // 有可能上个测试用例正在操作bin/data.json这个文件，造成对这个测试用例的影响，所以做一个延迟执行
         exec(`node bin/index.js use ${key}`, (err, stdout, stderr) => {
             if (err) { console.error(`exec error: ${error}`); return }
+            // anyContain是自己扩展的方法，实现，有其中一个结果都算测试通过
             expect(stdout).anyContain([
                 `set registry success`,
                 `${key} is not in list`
