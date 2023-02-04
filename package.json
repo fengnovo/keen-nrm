@@ -1,0 +1,27 @@
+{
+  "name": "keen-nrm",
+  "version": "1.0.2",
+  "description": "类似nrm的命令行工具",
+  "main": "index.js",
+  "bin": {
+    "keen-nrm": "bin/index.js"
+  },
+  "scripts": {
+    "dev": "node bin/index.js -v",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengnovo/keen-nrm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fengnovo/keen-nrm/issues"
+  },
+  "homepage": "https://github.com/fengnovo/keen-nrm#readme",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  }
+}
