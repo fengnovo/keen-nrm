@@ -21,7 +21,7 @@ const obj2File = (dataObj) => {
 
 let data = file2Obj('./data.json');
 
-if (argv.indexOf('-v') !== -1) {
+if (argv.indexOf('-v') !== -1 || argv.indexOf('-V') !== -1) {
     console.log(`${name} V${version}`);
 } else if (argv.indexOf('ls') !== -1) {
     const { exec } = require('child_process')
