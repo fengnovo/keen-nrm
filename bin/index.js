@@ -67,7 +67,7 @@ if (argv.indexOf('-v') !== -1 || argv.indexOf('-V') !== -1) {
     console.log(`del ${keyArg} registry success!`)
 } else if (argv.indexOf('use') !== -1) {  // keen-nrm use toabao
     const index = argv.indexOf('use')
-    const key = argv[index + 1] // toabao1
+    const key = argv[index + 1] // toabao
     if (!key) {
         return
     }
